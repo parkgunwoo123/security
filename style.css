@@ -26,6 +26,21 @@ h1 {
     color: #ccc;
 }
 
+/* 첫 번째 assignment 이미지 크게 */
+.assignment:first-of-type {
+    width: 600px;  /* 원하는 크기 */
+    margin: 20px auto 40px auto;  /* 위아래 간격, 가로 가운데 정렬 */
+    display: block;
+    box-shadow: 0 0 16px rgba(255 255 255 / 0.3);  /* 강조 효과 */
+    transition: transform 0.3s ease;
+}
+
+/* 반응형 - 화면 작아지면 크기 조정 */
+@media (max-width: 700px) {
+    .assignment:first-of-type {
+        width: 90%;
+    }
+}
 /* 이미지 스타일 */
 .assignment {
     width: 180px;
