@@ -2,13 +2,89 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>과제 목록</title>
+  <title>정보보안 과제 모음</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .assignment-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .assignment {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 15px;
+      width: 260px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .assignment:hover {
+      transform: scale(1.03);
+    }
+
+    .assignment img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .assignment-title {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #66ccff;
+    }
+
+    .assignment-title a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .assignment-title a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>과제 목록</h1>
-  <ul>
-    <li><a href="과제1/index.html">1과제 보기</a></li>
-    <li><a href="과제2/index.html">2과제 보기</a></li>
-  </ul>
+
+  <h1>📘 정보보안 과제 모음</h1>
+
+  <div class="assignment-list">
+    <!-- 과제 1 -->
+    <div class="assignment">
+      <a href="과제1/index.html">
+        <img src="practice/0813-1.png" alt="1과제 미리보기 이미지">
+        <div class="assignment-title">1과제 보기</div>
+      </a>
+    </div>
+
+    <!-- 과제 2 -->
+    <div class="assignment">
+      <a href="과제2/index.html">
+        <img src="practice/0901-1.png" alt="2과제 미리보기 이미지">
+        <div class="assignment-title">2과제 보기</div>
+      </a>
+    </div>
+
+    <!-- 필요 시 추가 -->
+  </div>
+
 </body>
 </html>
