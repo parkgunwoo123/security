@@ -89,6 +89,33 @@ h1 {
     font-weight: 600;
 }
 
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #66ccff;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.home-button:hover {
+  color: #a0d8ff;
+}
+
+.home-button svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
 .link-box a:hover {
     text-decoration: underline;
 }
