@@ -13,11 +13,54 @@
       color: #f0f0f0;
       padding: 30px;
       text-align: center;
+      position: relative;
+    }
+
+    /* 홈 버튼 스타일 */
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      color: #66ccff;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 1000;
+    }
+
+    .home-button:hover {
+      color: #a0d8ff;
+    }
+
+    /* SVG 아이콘 크기 및 색상 */
+    .home-button svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    /* 설명 문구 */
+    .description {
+      font-size: 1.1rem;
+      color: #99ccffcc;
+      margin-bottom: 15px;
+      font-style: italic;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      letter-spacing: 0.03em;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 30px;
+      color: #66ccff;
+      text-shadow: 0 0 10px #66ccff99;
     }
 
     .assignment-list {
@@ -63,6 +106,19 @@
   </style>
 </head>
 <body>
+
+  <!-- 홈 버튼 -->
+  <button class="home-button" onclick="location.href='index.html'" aria-label="홈으로 이동">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+    </svg>
+    홈
+  </button>
+
+  <!-- 설명 문구 -->
+  <p class="description">
+    정보보안에 열정을 가진 개발자, 실습과 프로젝트를 통해 성장하는 중입니다.
+  </p>
 
   <h1>📘 정보보안 과제 모음</h1>
 
