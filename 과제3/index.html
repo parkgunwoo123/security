@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>정보보안 과제 수행 결과</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+        <!-- 홈 버튼 -->
+    <button class="home-button" onclick="location.href='../index.html'" aria-label="홈으로 이동">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+      </svg>
+      홈
+    </button>
+    <div class="container">
+        <h1>과제 결과</h1>
+        <p class="description">
+             수업 과정중에 수행한 과제물입니다. 자세한 풀이과정은 tistory 링크를 참조해주세요.
+        </p>
+
+        <!-- 과제 이미지 -->
+        <img class="assignment" src="../practice_1105-1.PNG" alt="과제 스크린샷" />
+        <img class="assignment" src="../practice_1105-2.PNG" alt="과제 스크린샷" />
+        <img class="assignment" src="../practice_1105-3.png" alt="과제 스크린샷" />
+        <img class="assignment" src="../practice_1105-4.png" alt="과제 스크린샷" />
+        <img class="assignment" src="../practice_1105-5.png" alt="과제 스크린샷" />
+        <img class="assignment" src="../practice_1105-6.png" alt="과제 스크린샷" />
+
+        <!-- 모달 -->
+        <div id="imgModal" class="modal">
+            <img class="modal-content" id="modalImg" alt="확대된 과제 이미지" />
+        </div>
+
+        <!-- 티스토리 링크 -->
+        <div class="link-box">
+            <a href="https://mngprog.tistory.com/137" target="_blank">📘 tistory에서 더 자세하게 다루고 있습니다.</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
